@@ -1,0 +1,98 @@
+body {
+  font-family: 'Inter', sans-serif;
+  font-family: 'Unbounded', sans-serif;
+  background-color: rgb(216, 210, 231);   /* #cfe8ee; */
+  /* Hide horizontal scrollbar */
+}
+
+/* #navbar {
+  /* background-color: #bea0b4;
+} */
+
+#hero {
+  /* margin-top: 6rem !important; */
+  /* background-color: #bea0b4; */
+  height: 100%; /* Adjust the height if needed */
+}
+
+#about-me {
+  background-color: aliceblue;
+}
+
+#projects {
+  background-color: aliceblue;
+}
+.shadow-progress {
+  box-shadow: 8px 8px 10px #919191; /* Adjust shadow properties as needed */
+}
+/* .home-demo .item {
+  background: #ff3f4d;
+}
+.home-demo h2 {
+  color: #FFF;
+  text-align: center;
+  padding: 5rem 0;
+  margin: 0;
+  font-style: italic;
+  font-weight: 300;
+} */
+#project-carousel {
+  max-width: 80%; /* Adjust the max-width as needed */
+  margin: 0 auto;
+}
+
+#project-carousel .item {
+  position: relative;
+  text-align: left; /* Adjust as needed */
+  height: 100%; /* Make the items take up the full height of the container */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+#project-carousel .item img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0; /* Align the images to the bottom */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+#project-carousel .item:hover img {
+  transform: scale(1.1); /* Add a scale effect on hover */
+}
+
+#project-carousel .carousel-caption {
+  position: absolute;
+  bottom: 0; /* Align the caption to the bottom */
+  left: 0;
+  background: rgba(0, 0, 0, 0.7); /* Add a dark overlay to the caption */
+  width: 100%;
+  padding: 10px;
+  color: white; /* Text color */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+#project-carousel .item:hover .carousel-caption {
+  opacity: 1; /* Show the caption on hover */
+}
+
+#project-carousel .carousel-caption h5,
+#project-carousel .carousel-caption p {
+  margin: 0; /* Remove default margins for cleaner appearance */
+}
+
+#project-carousel .carousel-caption h5 {
+  color: red; /* Set the Live Demo text color to red */
+  margin-bottom: 5px;
+}
+
+/* Add dark overlay to images */
+#project-carousel .item img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay color */
+}
